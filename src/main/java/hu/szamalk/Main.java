@@ -12,6 +12,8 @@ public class Main {
         feladat4();
         feladat6es9();
         feladat10();
+
+        // feladat 3
     }
 
     public static void feladat4() {
