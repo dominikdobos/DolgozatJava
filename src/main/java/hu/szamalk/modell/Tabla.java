@@ -14,4 +14,17 @@ public class Tabla {
             }
         }
     }
+
+    public String megjelenit() {
+        String s = "";
+
+        for (int i = 0; i < T.length; i++) {
+            for (int j = 0; j < T[i].length; j++) {
+                s += T[i][j];
+            }
+            s += "\n";
+        }
+
+        return s;
+    }
 }
