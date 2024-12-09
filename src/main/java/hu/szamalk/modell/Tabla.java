@@ -59,4 +59,24 @@ public class Tabla {
         }
         return i == T[0].length;
     }
+
+    public int uresOszlopokSzama() {
+        int db = 0;
+        for (int i = 0; i < T.length; i++) {
+            if (uresOszlop(i)) {
+                db++;
+            }
+        }
+        return db;
+    }
+
+    public int uresSorokSzama() {
+        int db = 0;
+        for (int i = 0; i < T.length; i++) {
+            if (uresSor(i)) {
+                db++;
+            }
+        }
+        return db;
+    }
 }
