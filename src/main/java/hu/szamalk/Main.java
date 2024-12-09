@@ -1,19 +1,22 @@
 package hu.szamalk;
 
+import hu.szamalk.modell.Feladat3;
 import hu.szamalk.modell.Tabla;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.FileAlreadyExistsException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        feladat4();
-        feladat6es9();
-        feladat10();
+//        feladat4();
+//        feladat6es9();
+//        feladat10();
 
         // feladat 3
+        Feladat3 f3 = new Feladat3();
+        f3.megjelenit();
+        f3.stat();
     }
 
     public static void feladat4() {
