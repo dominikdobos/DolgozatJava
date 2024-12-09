@@ -1,6 +1,9 @@
 package hu.szamalk.modell;
 
+import java.util.Random;
+
 public class Tabla {
+    private static Random rnd = new Random();
     private char[][] T;
     private char uresCella;
 
@@ -26,5 +29,18 @@ public class Tabla {
         }
 
         return s;
+    }
+
+    public void elhelyez(int n) {
+        int i = 0;
+
+        while (i<n) {
+            int velI = rnd.nextInt(0,8);
+            int velJ = rnd.nextInt(0,8);
+            if (this.T[velI][velJ] == this.uresCella) {
+                this.T[velI][velJ] = 'K';
+                i++;
+            }
+        }
     }
 }
