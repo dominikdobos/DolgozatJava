@@ -38,7 +38,10 @@ public class Feladat3 {
             while (j != 91 && j != 92 && j != 93 && j != 94 && j != 95 && j != 96) {
                 j = rnd.nextInt(65,123);
             }
-//            angol.add(Character(Character.toString(i)));
+            String betu = Character.toString(i);
+            char ch = betu.charAt(1);
+
+            angol.add(Character.valueOf(ch));
         }
     }
 
